@@ -30,15 +30,16 @@ public class TwoSum{
             System.out.println("Enter the "+(i+1)+"th element you want in array : ");
             arr[i] = sc.nextInt();
         }
-        System.out.println(" ");
+        System.out.print("");
         System.out.println("Enter the target element ");
         int target = sc.nextInt();
         int[] ans = twoSum(arr,target);
+        System.out.print("");
         if (ans[0]!=-1){
-            System.out.println("The elements at index "+ans[0]+" of and "+ans[1]+" of arr which are "+ arr[ans[0]]+" "+arr[ans[1]]+" is the pair which makes the target element "+target);
+            System.out.println("The elements at index "+(ans[0]+1)+" of and "+(ans[1]+1)+" of arr which are "+ arr[ans[0]]+" "+arr[ans[1]]+" is the pair which makes the target element "+target);
         }
         else{
-            System.out.println("Not Found the pair");
+            System.out.println("Unable to Found the pair");
         }
     }
 }
