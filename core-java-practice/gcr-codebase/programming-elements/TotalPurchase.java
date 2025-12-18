@@ -1,7 +1,7 @@
 // This Program calculates the total amount after taking input of price of single quantity of product and total number of quantity bought
 import java.util.Scanner;
 
-public class TotalPrice {
+public class TotalPurchase {
     public static void main(String[] args) {
 
         // creating the object of Scanner class

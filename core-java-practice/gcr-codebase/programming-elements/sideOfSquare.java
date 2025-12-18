@@ -1,7 +1,7 @@
 // This programme calculates the side of square when perimeter is given.
 
 import java.util.Scanner;
-public class SquareSide {
+public class SideOfSquare {
     
     // Main method
     public static void main(String[] args) {

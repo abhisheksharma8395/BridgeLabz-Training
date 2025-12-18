@@ -1,7 +1,7 @@
 // This Program converts distance in feets to yards and miles
 import java.util.Scanner;
 
-public class DistanceConverter {
+public class Distance {
     public static void main(String[] args) {
 
         // creating the object of Scanner class
