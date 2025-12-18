@@ -9,11 +9,11 @@ public class BasicCalculator {
         Scanner input = new Scanner(System.in);
         
         // Taking input for first number        
-        System.out.print("Enter number1: ");
+        System.out.print("Enter number1 : ");
         double number1 = input.nextDouble();
 
         // Taking input for second number
-        System.out.print("Enter number2: ");
+        System.out.print("Enter number2 : ");
         double number2 = input.nextDouble();
         
         // Addition Operation

@@ -5,8 +5,9 @@ public class HarryAge {
     //Main Method
     public static void main(String[] args) {
 
-        // Given data
+        // Birth Year of Harry
         int BirthYear = 2000;
+        // Current Year
         int RunningYear = 2024;
         
         // Calculate age

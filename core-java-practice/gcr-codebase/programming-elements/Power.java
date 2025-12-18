@@ -7,15 +7,15 @@ class Power {
         Scanner sc = new Scanner(System.in);
 
         // Taking input of Base from user
-        System.out.println("Enter base:");
+        System.out.println("Enter base : ");
         int base = sc.nextInt();
  
         // Taking input of exponent from user
-        System.out.println("Enter exponent:");
+        System.out.println("Enter exponent : ");
         int exponent = sc.nextInt();
 
         // Calculating the result without using loop and conditionals
-        int result = (int)Math.pow(b, e);
-        System.out.println(b + " raised to the power " + e + " is: " + result);
+        int result = (int)Math.pow(base, exponent);
+        System.out.println(base + " raised to the power " + exponent + " is: " + result);
     }
 }

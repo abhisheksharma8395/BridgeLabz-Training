@@ -9,14 +9,14 @@ public class DoubleOpt {
         Scanner scanner = new Scanner(System.in);
 
         //taking Input of a,b,c from user
-        System.out.print("Enter a: ");
-        double a = scanner.nextInt();
+        System.out.print("Enter a : ");
+        double a = scanner.nextDouble();
 
-        System.out.print("Enter b: ");
-        double b = scanner.nextInt();
+        System.out.print("Enter b : ");
+        double b = scanner.nextDouble();
 
-        System.out.print("Enter c: ");
-        double c = scanner.nextInt();
+        System.out.print("Enter c : ");
+        double c = scanner.nextDouble();
         
         double operation1 = a + b * c;     // first operation
         double operation2 = a * b + c;     // second operation
@@ -24,6 +24,6 @@ public class DoubleOpt {
         double operation4 = a % b + c;     // fourth operation
         
         // Printing the Results
-        System.out.printf("The results of Int Operations are %.2f, %.2f, %.2f, and %.2f\n", result1, result2, result3, result4);
+        System.out.printf("The results of Int Operations are %.2f, %.2f, %.2f, and %.2f\n", operation1, operation2, operation3, operation4);
     }
 }

@@ -19,12 +19,10 @@ public class ProfitAndLoss {
         
         // Printing the result if profit is greater than or equals to 0 it means there is profit otherwise there is loss
 	if(profit>=0){
-	    System.out.println("The Cost Price is INR " + costPrice + " and Selling Price is INR " + sellingPrice + 
-                         "\nThe Profit is INR " + profit + "₹ and the Profit Percentage is " + profitPercentage + "%");
+	    System.out.printf("The Cost Price is INR %d and Selling Price is INR %d \nThe Profit is INR %d and the Profit Percentage is %.2f%%",costPrice,sellingPrice,profit,profitPercentage);
 	}
 	else{
-	    System.out.println("The Cost Price is INR " + costPrice + " and Selling Price is INR " + sellingPrice + 
-                         "₹\nThe Loss is INR" + profit + "₹ and the Loss Percentage is " + profitPercentage + "%");
+        System.out.printf("The Cost Price is INR %d and Selling Price is INR %d \nThe Loss is INR %d and the Loss Percentage is %.2f%%",costPrice,sellingPrice,profit,profitPercentage);
 	}
     }
 }

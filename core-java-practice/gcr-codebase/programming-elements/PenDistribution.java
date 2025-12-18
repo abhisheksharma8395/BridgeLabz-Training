@@ -10,7 +10,7 @@ public class PenDistribution {
         // 3 Total Student are there
         int numberOfStudents = 3;
 
-        // Calculating pens per student so that pens can distributed equally in students
+        // Calculating pens per student so that pens can distribute equally in students
         int pensPerStudent = totalPens / numberOfStudents;
         
         // Calculating pens that were not distributed or remaining pens

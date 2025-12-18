@@ -7,11 +7,11 @@ class KilometersToMiles {
         Scanner sc = new Scanner(System.in);
       
         // Taking input of Kilometers from users
-	    System.out.println("Enter distance in kilometers:");
+	    System.out.println("Enter distance in kilometers : ");
         double kilometers = sc.nextDouble();
 
         // Calculating the total miles
-	    double miles = km * 0.621371;
-        System.out.println(kilometers + " kilometers is equal to " + miles + " miles.");
+	    double miles = kilometers / 1.6;
+        System.out.printf("%.2f kilometers is equal to %.2f miles.",kilometers,miles);
     }
 }

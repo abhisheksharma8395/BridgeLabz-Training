@@ -8,11 +8,11 @@ public class TriangleArea {
         Scanner scanner = new Scanner(System.in);
         
         // Taking Input of base of triangle from user
-        System.out.print("Enter base: ");
+        System.out.print("Enter base of Triangle in inches : ");
         double base = scanner.nextDouble();
 
         // Taking Input of height of triangle from user
-        System.out.print("Enter height: ");
+        System.out.print("Enter height of Triangle in inches : ");
         double height = scanner.nextDouble();
         
         // Calculates the area of triangle 

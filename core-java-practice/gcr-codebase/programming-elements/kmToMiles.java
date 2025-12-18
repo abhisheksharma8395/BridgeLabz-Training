@@ -7,7 +7,7 @@ public class kmToMiles {
         // Given distance in Kilometers
         double kilometers = 10.8;
 
-        // Calculating Miles from Kilometers As we know 1 miles = 1.6 kilometers
+        // Calculating Miles from Kilometers As we know 1 mile = 1.6 kilometers
         double miles = kilometers / 1.6;
 
         // Printing the result

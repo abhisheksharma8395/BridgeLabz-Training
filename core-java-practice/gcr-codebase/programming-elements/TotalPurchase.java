@@ -8,16 +8,16 @@ public class TotalPurchase {
         Scanner scanner = new Scanner(System.in);
 
         //Taking Input for a single quantity price in INR
-        System.out.print("Enter unit price (INR): ");
+        System.out.print("Enter unit price (INR) : ");
         double unitPrice = scanner.nextDouble();
 
         //Taking Input for total quantity bought
-        System.out.print("Enter quantity: ");
+        System.out.print("Enter quantity : ");
         int quantity = scanner.nextInt();
         
         // Calculating total price 
         double totalPrice = unitPrice * quantity;
-        System.out.printf("The total purchase price is INR %.2f if the quantity %d and unit price is INR %.2f\n", 
+        System.out.printf("The total purchase price is INR %.2f if the quantity %d and unit price of each quantity is INR %.2f\n",
                          totalPrice, quantity, unitPrice);
     }
 }

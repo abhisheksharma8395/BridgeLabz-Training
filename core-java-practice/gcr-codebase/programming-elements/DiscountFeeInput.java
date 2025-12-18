@@ -10,11 +10,13 @@ public class DiscountFeeInput {
         Scanner sc = new Scanner(System.in);
        
  
-        // Student's Total University Fees
+        // Taking input of Student's Total University Fees
+        System.out.println("Enter the fees of student : ");
         double fee = sc.nextDouble();
         
         // Discount percentage on fees
-        double discountPercent = sc.nextDouble;
+        System.out.println("Enter the discount percentage on student's fees:");
+        double discountPercent = sc.nextDouble();
 
         // Calculating total discount 
         double discount = (fee * discountPercent) / 100;

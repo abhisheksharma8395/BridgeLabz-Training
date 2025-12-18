@@ -16,8 +16,7 @@ public class EarthVolume {
         // Converting cubic kilometers to cubic miles (1 km^3 ≈ 0.239913 mi^3)
         double volumeInMiles = volumeInKm * 0.239913;
 
-        // Printings the result
-        System.out.println("The volume of earth in cubic kilometers is " + volumeInKm + 
-                         " and cubic miles is " + volumeInMiles);
+        // Printing the result
+        System.out.printf("The volume of earth in cubic kilometers is %.2f and cubic miles is %.2f " , volumeInKm,volumeInMiles);
     }
 }

@@ -10,14 +10,14 @@ public class SideOfSquare {
         Scanner scanner = new Scanner(System.in);
 
         //Taking Input of perimeter of square from User
-        System.out.print("Enter perimeter: ");
+        System.out.print("Enter perimeter : ");
         double perimeter = scanner.nextDouble();
 
         //Calculating Sides from formula perimeter of square = 4* side
         double side = perimeter / 4;
 
         // Printing the result
-        System.out.printf("The length of the side is %.2f whose perimeter is %.2f\n", side, perimeter);
+        System.out.printf("Side of the square is %.2f whose perimeter is %.2f\n", side, perimeter);
         
         scanner.close();
     }

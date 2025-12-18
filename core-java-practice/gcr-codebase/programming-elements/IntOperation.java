@@ -8,12 +8,12 @@ public class IntOperation {
         Scanner scanner = new Scanner(System.in);
 
         //taking Input of a,b,c from user
-        System.out.print("Enter a: ");
+        System.out.print("Enter a : ");
         int a = scanner.nextInt();
 
-        System.out.print("Enter b: ");
+        System.out.print("Enter b : ");
         int b = scanner.nextInt();
-        System.out.print("Enter c: ");
+        System.out.print("Enter c : ");
         int c = scanner.nextInt();
         
         int operation1 = a + b * c;     // first operation
@@ -22,6 +22,6 @@ public class IntOperation {
         int operation4 = a % b + c;     // fourth operation
         
         // Printing the Results
-        System.out.printf("The results of Int Operations are %d, %d, %d, and %d\n", result1, result2, result3, result4);
+        System.out.printf("The results of Int Operations are %d, %d, %d, and %d\n", operation1, operation2, operation3, operation4);
     }
 }

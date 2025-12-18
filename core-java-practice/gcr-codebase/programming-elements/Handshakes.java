@@ -6,7 +6,7 @@ public class Handshakes {
         Scanner scanner = new Scanner(System.in);
 
         //Taking input from user for total number of Students
-        System.out.print("Enter number of students: ");
+        System.out.print("Enter number of students : ");
         int numberOfStudents = scanner.nextInt();
         
         // Calculating total number of handshakes between students
