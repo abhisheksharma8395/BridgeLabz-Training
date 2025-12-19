@@ -18,7 +18,8 @@ public class TriangleArea {
         // Calculates the area of triangle 
         double areaInches = 0.5 * base * height;
         double areaCm = areaInches * 6.4516;
-        
+
+        // Printing the result
         System.out.printf("Area of triangle is %.2f square inches or %.2f square centimeters\n", areaInches, areaCm);
         
         scanner.close();

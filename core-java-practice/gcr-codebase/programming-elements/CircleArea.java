@@ -10,10 +10,10 @@ class CircleArea {
 
         //Taking input for radius of the circle
         System.out.println("Enter radius of the circle : ");
-        double radius = sc.nextDouble();
+        double radii = sc.nextDouble();
 
-        //calculating area by using formula -> areaOfCircle => πr^2
-        double areaOfCircle = Math.PI * radius * radius;
+        //calculating area by using formula -> areaOfCircle => π(radii)^2
+        double areaOfCircle = Math.PI * radii * radii;
         System.out.printf("Area of the circle is : %.2f", areaOfCircle);
     }
 }

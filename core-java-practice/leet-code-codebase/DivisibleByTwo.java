@@ -5,6 +5,7 @@ public class DivisibleByTwo {
         Scanner sc = new Scanner(System.in);
         // Taking input of a number from user
         int num = sc.nextInt();
+        // Checking if number is divisible by 2 or not
         if ((num % 2) == 0) {
             System.out.println("The Number " + num + " is divisible by 2");
         } else {

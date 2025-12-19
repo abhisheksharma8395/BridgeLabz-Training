@@ -20,7 +20,7 @@ public class TwoSum{
        }
        return ans;
    }
-
+   // Main Method
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of elements you want in array : ");

@@ -4,12 +4,12 @@ public class AddTwoNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // Taking input of first Number from user
-        int a = sc.nextInt();
+        int num1 = sc.nextInt();
         // taking input of second number from user
-        int b = sc.nextInt();
+        int num2 = sc.nextInt();
         // Variable c stores the addition of both numbers
-        int c = a + b;
-        System.out.println("The Sum of " + a + " and " + b + " is Equals to " + c);
+        int num3 = num1 + num2;
+        System.out.println("The Sum of " + num1 + " and " + num2 + " is Equals to " + num3);
     }
 
 }

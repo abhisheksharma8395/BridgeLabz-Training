@@ -5,10 +5,10 @@ public class printingTable {
         Scanner sc = new Scanner(System.in);
         // Taking input from users
         int num = sc.nextInt();
-        int i = 1;
-        while (i <= 10) {
-            System.out.println(num + " x " + i + " = " + (num * i));
-            i++;
+        int iterator = 1;
+        while (iterator <= 10) {
+            System.out.println(num + " x " + iterator + " = " + (num * iterator));
+            iterator++;
         }
     }
 
