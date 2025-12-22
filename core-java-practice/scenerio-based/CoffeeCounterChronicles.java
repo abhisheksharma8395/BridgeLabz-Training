@@ -34,7 +34,7 @@ public class CoffeeCounterChronicles {
                         System.out.println(" _________________________________________________________________________________________________________");
                         System.out.println("|    Coffee Type             |       Price      |     Quantity      |     Total price (Including GST)     |");
                         System.out.println("|____________________________|__________________|___________________|_____________________________________|");
-                        System.out.printf(" |          Amricano          |       200₹        |        %d        |             %.2f                    |", quantity, (quantity * 200) + ((quantity * 200) * GST));
+                        System.out.printf("|          Amricano          |       200₹       |        %d         |             %.2f                   |", quantity, (quantity * 200) + ((quantity * 200) * GST));
                         System.out.println("");
                         System.out.println("|____________________________|__________________|___________________|_____________________________________|");
                         break;
@@ -43,7 +43,7 @@ public class CoffeeCounterChronicles {
                         System.out.println(" _________________________________________________________________________________________________________");
                         System.out.println("|    Coffee Type             |       Price      |     Quantity      |     Total price (Including GST)     |");
                         System.out.println("|____________________________|__________________|___________________|_____________________________________|");
-                        System.out.printf("|          Cappuccino        |       250₹       |        %d         |             %.2f                    |", quantity, (quantity * 250) + ((quantity * 250) * GST));
+                        System.out.printf("|          Cappuccino        |       250₹       |        %d          |             %.2f                   |", quantity, (quantity * 250) + ((quantity * 250) * GST));
                         System.out.println("");
                         System.out.println("|____________________________|__________________|___________________|_____________________________________|");
                         break;
@@ -52,7 +52,7 @@ public class CoffeeCounterChronicles {
                         System.out.println(" _________________________________________________________________________________________________________");
                         System.out.println("|    Coffee Type             |       Price      |     Quantity      |     Total price (Including GST)     |");
                         System.out.println("|____________________________|__________________|___________________|_____________________________________|");
-                        System.out.printf("|          Black Coffee      |       145₹       |        %d         |             %.2f                    |", quantity, (quantity * 145) + ((quantity * 145) * GST));
+                        System.out.printf("|          Black Coffee      |       145₹       |        %d          |             %.2f                   |", quantity, (quantity * 145) + ((quantity * 145) * GST));
                         System.out.println("");
                         System.out.println("|____________________________|__________________|___________________|_____________________________________|");
                         break;
@@ -61,7 +61,7 @@ public class CoffeeCounterChronicles {
                         System.out.println(" _________________________________________________________________________________________________________");
                         System.out.println("|    Coffee Type             |       Price      |     Quantity      |     Total price (Including GST)     |");
                         System.out.println("|____________________________|__________________|___________________|_____________________________________|");
-                        System.out.printf("|          Espresso          |       170₹       |        %d         |             %.2f                    |", quantity, (quantity * 170) + ((quantity * 170) * GST));
+                        System.out.printf("|          Espresso          |       170₹       |        %d          |             %.2f                   |", quantity, (quantity * 170) + ((quantity * 170) * GST));
                         System.out.println("");
                         System.out.println("|____________________________|__________________|___________________|_____________________________________|");
                         break;
@@ -70,7 +70,7 @@ public class CoffeeCounterChronicles {
                         System.out.println(" _________________________________________________________________________________________________________");
                         System.out.println("|    Coffee Type             |       Price      |     Quantity      |     Total price (Including GST)     |");
                         System.out.println("|____________________________|__________________|___________________|_____________________________________|");
-                        System.out.printf("|          Macchiato         |       190₹       |        %d         |             %.2f                    |", quantity, (quantity * 190) + ((quantity * 190) * GST));
+                        System.out.printf("|          Macchiato         |       190₹       |        %d          |             %.2f                   |", quantity, (quantity * 190) + ((quantity * 190) * GST));
                         System.out.println("");
                         System.out.println("|____________________________|__________________|___________________|_____________________________________|");
                         break;
