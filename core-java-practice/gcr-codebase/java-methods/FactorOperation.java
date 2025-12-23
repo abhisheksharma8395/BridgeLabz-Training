@@ -47,11 +47,9 @@ public class FactorOperation {
     public static void main(String[] args) {
         int num = 12;  // Test number
         int[] factors = findFactors(num);
-
         System.out.print("Factors of " + num + ": ");
         for (int f : factors) System.out.print(f + " ");
         System.out.println();
-
         System.out.println("Greatest Proper Factor: " + greatestFactor(factors, num));
         System.out.println("Sum of Factors: " + sum(factors));
         System.out.println("Product of Factors: " + product(factors));

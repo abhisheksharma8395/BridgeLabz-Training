@@ -15,13 +15,13 @@ public class BMICalculator2DArray {
         double[][] personData = new double[numberOfPersons][3];
         String[] weightStatus = new String[numberOfPersons];
 
-        // Taking input for weight in kg and height in centimeter
+        // Taking input for weight in kilogram and height in centimeter
         for (int i = 0; i < numberOfPersons; i++) {
             boolean validInput = false;
             while (!validInput) {
-                System.out.print("\nPerson " + (i + 1) + " weight (kg): ");
+                System.out.print("\nPerson " + (i + 1) + " weight (kg) : ");
                 personData[i][0] = scanner.nextDouble();
-                System.out.print("Person " + (i + 1) + " height (m): ");
+                System.out.print("Person " + (i + 1) + " height (cm) : ");
                 personData[i][1] = scanner.nextDouble();
 
                 if (personData[i][0] <= 0 || personData[i][1] <= 0) {

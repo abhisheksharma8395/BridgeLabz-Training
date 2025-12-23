@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NaturalNumberSum {
+public class NaturalNumberSumMethod {
 
     // Method to calculate sum of n natural numbers using a loop
     public static int sumOfNaturalNumbers(int n) {
@@ -13,7 +13,7 @@ public class NaturalNumberSum {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number (n): ");
+        System.out.print("Enter a number (n) : ");
         int n = sc.nextInt();
 
         int sum = sumOfNaturalNumbers(n);

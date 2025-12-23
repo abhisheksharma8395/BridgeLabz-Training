@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class EmployeeBonus {
+public class EmployeeBonusMethod {
 
     // Generate 2D array: [][0]=salary, [][1]=yearsOfService
     public static int[][] generateEmployeeData() {
