@@ -1,20 +1,22 @@
 public class BankAccount {
-    //Attributes
-    private String accountHolder;
-    private String accountNumber;
-    private double balance;
+    // Attributes
+    private String accountHolder;                                   // Stores the account holder name
+    private String accountNumber;                                   // stores the account number
+    private double balance;                                         // stores the balance of that account
 
-    //constructor
+    // constructor of BankAccount class
     public BankAccount(String accountHolder,String accountNumber,double balance) {
         this.accountHolder = accountHolder;
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
+
     //creating method to display bank name
     public static void displayBank() {
         System.out.println("\t\t\t\tState of Chennai\t\t\t\t");
 
     }
+
     //Creating the method to calculate the deposit
     public void deposit(double amount) {
         if(amount > 0) {
@@ -26,7 +28,7 @@ public class BankAccount {
         }
     }
 
-    //Creating the method to calculate the withdraw amount
+    //Creating the method to calculate the withdrawal amount
     public void withdraw(double amount) {
         if (amount <= balance && amount > 0) {
             balance -= amount;
