@@ -3,12 +3,12 @@ import java.util.Random;
 public class EmployeeWageComputation {
     public static void main(String[] args) {
         // Creating the object of Employee class
-        Employee employee1 = new Employee("Virat");
+        Employee.display();
+        Employee employee1 = new Employee("Virat Kohli");
         employee1.EmployeeAttendance();                    // filling the attendance array for employee name "Virat"
         employee1.DailyEmployeeWage();
         employee1.wagesForMonth();
         employee1.totalWages();
-
     }
 }
 // class Employee
@@ -23,7 +23,7 @@ class Employee {
         this.name = name;
     }
 
-    // This method display some text
+    // This is a static method to display some text
     public static void display() {
         System.out.println("Welcome to Employee Wage Computation Program on Master Branch");
     }
@@ -60,27 +60,23 @@ class Employee {
     // This employee calculate the Daily wage of Employee
     // UC-02
     public void DailyEmployeeWage() {
+        System.out.println("Attendance of the Employee with the name "+this.name+" for this month is : ");
         for (int i = 0; i < attendance.length; i++) {
             switch (attendance[i]) {
                 case "H":
-                    System.out.println("On " + (i + 1) + " Day of this month Employee with name " + this.name + " is on holiday so total wage of employee on that Day is 0₹");
-                    System.out.println("___________________________________________________________________________________________________________________________________________________________");
+                    System.out.println("Day " + (i + 1) + " -> Holiday , Wage -> 0₹");
                     break;
                 case "P":
-                    System.out.println("On " + (i + 1) + " Day of this month Employee with name " + this.name + " is Full-Day present so total wage of employee on that Day is " + (20 * 8) + "₹");
-                    System.out.println("___________________________________________________________________________________________________________________________________________________________");
+                    System.out.println("Day " + (i + 1) + " -> Present , Wage -> "+(20*8)+"₹");
                     break;
                 case "A":
-                    System.out.println("On " + (i + 1) + " Day of this month Employee with name " + this.name + " is Absent so total wage of employee on that Day is 0₹");
-                    System.out.println("___________________________________________________________________________________________________________________________________________________________");
+                    System.out.println("Day " + (i + 1) + " -> Absent , Wage -> 0₹");
                     break;
                 case "HD":
-                    System.out.println("On " + (i + 1) + " Day of this month Employee with name " + this.name + " is Partial-Day present so total wage of employee on that Day is " + (20 * 4) + "₹");
-                    System.out.println("____________________________________________________________________________________________________________________________________________________________");
+                    System.out.println("Day " + (i + 1) + " -> Partially Present , Wage -> "+(20*4)+"₹");
                     break;
             }
         }
-        System.out.println("Employee Daily Wage Equals to " + (8 * 20) + "₹");
     }
 
     // UC-03
