@@ -4,7 +4,6 @@ public class BubbleSort {
     public static void bubbleSort(int[] marks) {
         int length = marks.length;                          // Stores the length of array marks
 
-        // Iterating the
         for (int i = 0; i < length-1 ; i++) {
             boolean flag = false;                            // To make Bubble sort more efficient
             for (int j = 0; j < length-i-1 ; j++) {

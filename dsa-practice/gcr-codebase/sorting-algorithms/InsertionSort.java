@@ -19,7 +19,16 @@ public class InsertionSort {
 
     // Method to perform Insertion Sort
     public static void insertionSort(int[] arr) {
-
+        for (int i = 1; i < arr.length; i++) {        // Running the loop from i = 1 to i = arr.length - 1
+            int key = arr[i];
+            for (int j = i - 1; j >= 0; j--) {
+                if (key < arr[j]) {
+                    int temp = arr[j];
+                    arr[j] = key;
+                    arr[j + 1] = temp;
+                }
+            }
+        }
     }
 
     // Utility method to print array

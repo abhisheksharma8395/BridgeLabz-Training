@@ -15,9 +15,24 @@ public class SelectionSort {
         printArray(scores);
     }
 
-    // Selection Sort algorithm
+    // This Method performs Selection Sort algorithm
     public static void selectionSort(int[] arr) {
 
+        for(int i = 0; i < arr.length-1 ; i++){
+            int minIndex = i;
+
+            // Finding the minimum value in unsorted part of array
+            for(int j = i+1; j < arr.length; j++){
+                if(arr[j] < arr[minIndex]){
+                    minIndex = j;
+                }
+            }
+
+            // Swapping the values of minIndex and i
+            int temp = arr[minIndex];
+            arr[minIndex] = arr[i];
+            arr[i] = temp;
+        }
     }
 
     // Utility method to print array
