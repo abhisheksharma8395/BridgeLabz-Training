@@ -1,44 +1,78 @@
-// This method compares the time taken by fibonacci series using iterative and fibonacci series using recursive method.
+// This method compares the time taken by Searching a target in array , HashSet and TreeSet
 
+import java.util.HashSet;
+import java.util.Random;
+import java.util.TreeSet;
 
 public class SearchingInDataStructures {
 
-    // Fibonacci Series using Recursive Method : O(2^N)
-    public static int fibonacciRecursive(int n) {
-        if (n <= 1) return n;
-        return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
+    // Linear Search: O(N)
+    public static int linearSearch(int[] arr, int target) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                return i;
+            }
+        }
+        return -1;
     }
 
-    // Fibonacci Series using recursive method
-    public static int fibonacciIterative(int n) {
-        int a = 0, b = 1, sum;
-        for (int i = 2; i <= n; i++) {
-            sum = a + b;
-            a = b;
-            b = sum;
+
+
+    // Generate random array of size N
+    public static int[] generateRandomArray(int size) {
+        Random rand = new Random();
+        int[] arr = new int[size];
+        for (int i = 0; i < size; i++) {
+            arr[i] = rand.nextInt(size * 10); // Ensures wide range
         }
-        return b;
+        return arr;
     }
 
     // Main Method
     public static void main(String[] args) {
-        int[] datasetSizes = {10, 30, 50};
+        int[] datasetSizes = {1000, 10000, 1000000};
         for (int size : datasetSizes) {
+            int[] data = generateRandomArray(size);
+            int target = data[new Random().nextInt(size)]; // Pick a random existing target
 
-            // Time taken by fibonacci iterative method
+            // Creating the object of HashSet class
+            HashSet<Integer> set = new HashSet<>();
+
+            // Filling HashSet
+            for (int i = 0; i < size; i++) {
+                set.add(data[i]);
+            }
+
+            // Creating the object of TreeSet class
+            TreeSet<Integer> treeSet = new TreeSet<>();
+
+            // Filling TreeSet
+            for (int i = 0; i < size; i++) {
+                treeSet.add(data[i]);
+            }
+
+
+
+            // Searching in Array by using Linear Search Algorithm Timing
             long start = System.nanoTime();
-            fibonacciIterative(size);
-            long iterativeTime = System.nanoTime() - start;
+            linearSearch(data, target);
+            long linearTime = System.nanoTime() - start;
 
-            // Time taken by fibonacci recursive method
+            // Searching in HashSet Timing
             start = System.nanoTime();
-            fibonacciRecursive(size);
-            long recursiveTime = System.nanoTime() - start;
+            set.contains(target);
+            long hashSetTime = System.nanoTime() - start;
+
+            // Searching in TreeSet Timing
+            start = System.nanoTime();
+            treeSet.contains(target);
+            long treeSetTime = System.nanoTime() - start;
 
 
             System.out.printf("Dataset Size: %,d\n", size);
-            System.out.printf("Fibonacci by Iterative way Time : %.4f ms\n", iterativeTime / 1e6);
-            System.out.printf("Fibonacci by Recursive way Time : %.4f ms\n", recursiveTime / 1e6);
+            System.out.printf("Linear Search Time in Array : %.4f ms\n", linearTime / 1e6);
+            System.out.printf("Search in HashSet Time : %.4f ms\n", hashSetTime / 1e6);
+            System.out.printf("Search in TreeSet Time : %.4f ms\n\n", treeSetTime / 1e6);
         }
     }
 }
