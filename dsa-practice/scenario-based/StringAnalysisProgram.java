@@ -13,7 +13,6 @@ public class StringAnalysisProgram {
         // To Display the paragraph
         paragraph1.display();
 
-
         // To Display the longest word in paragraph
         paragraph1.longestWord();
 
@@ -37,7 +36,7 @@ class ParagraphEnhance{
         try {
             paragraph = paragraph.trim();                                             // To remove the leading and trailing space from paragraph
             paragraph = paragraph.replaceAll("\\s+", " ");            // To remove multiple consecutive space to only single space.
-            this.words = paragraph.split(" ");                              // This stores every word of paragraph on its indexes
+            this.words = paragraph.split(" ");                                  // This stores every word of paragraph on its indexes
             this.paragraph = paragraph;
         }
         catch(Exception e){
@@ -94,6 +93,7 @@ class ParagraphEnhance{
         this.words = paragraph.split(" ");
     }
 
+    // This method Displays the paragraph
     public void display(){
         System.out.print("Your Enhanced Paragraph is : ");
         for(int i = 0;i<words.length;i++){
