@@ -40,7 +40,6 @@ interface Category{
 }
 
 // Books class Extending Category interface
-
 class Books implements Category{
     String bookName;                                                                  // Stores the Book Name of the Book
     String author;                                                                    // Stores the name of the author of the book
