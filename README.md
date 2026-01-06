@@ -147,6 +147,14 @@ Each entry includes concepts covered, skills practiced, and links to the exact c
    students and performs statistical analysis to help evaluate overall performance.<br>
   🔗 [Code](https://github.com/abhisheksharma8395/BridgeLabz-Training/blob/dsa-practice/dsa-practice/scenario-based/StudentScoreManagement.java)<br>
 
+## 🧰 Generics Branch
+
+### 📂 gcr-codebase folder :
+
+* 📅 03/01/26 (Sat) – Day 13 – Generics<br>
+  Topics : Introduction to Generics, Type Parameters, Generic Classes, Generic Methods, Bounded Type Parameters, Wildcards
+  🔗 [Code](https://github.com/abhisheksharma8395/BridgeLabz-Training/tree/generics-practice/generics-practice/gcr-codebase/generics)<br>
+
 
 📝 Note:
 Each topic’s code is organized in its dedicated branch — but this main README connects everything.
