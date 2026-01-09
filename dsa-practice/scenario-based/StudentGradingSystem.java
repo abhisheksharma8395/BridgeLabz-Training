@@ -89,7 +89,7 @@ class StudentGradeManager {
             }
             averageMark = averageMark/this.students.size();
         }
-        System.out.printf("Average Marks of class is : %.2f",averageMark);
+        System.out.printf("Average Marks of class is : %.2f\n",averageMark);
         System.out.println("________________________________________________________");
     }
 
