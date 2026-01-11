@@ -93,7 +93,7 @@ Each entry includes concepts covered, skills practiced, and links to the exact c
   Topics: Encapsulation, Data Hiding, Getter & Setter Method, Compile-Time (Static) Polymorphism, Runtime (Dynamic) Polymorphism, Polymorphism with Interfaces, Polymorphism with Abstract Classes, Casting and instanceof with Polymorphism, Java Interfaces and Abstract Classes.<br>
   🔗 [Code](https://github.com/abhisheksharma8395/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/oop-pillars)<br>
 
-## 🧩 DSA Branch
+## 🧩 dsa-practice Branch
 
 ### 📂 gcr-codebase folder :
 
@@ -147,14 +147,47 @@ Each entry includes concepts covered, skills practiced, and links to the exact c
    students and performs statistical analysis to help evaluate overall performance.<br>
   🔗 [Code](https://github.com/abhisheksharma8395/BridgeLabz-Training/blob/dsa-practice/dsa-practice/scenario-based/StudentScoreManagement.java)<br>
 
-## 🧰 Generics Branch
+## 🧰 generics-practice Branch
 
 ### 📂 gcr-codebase folder :
 
 * 📅 03/01/26 (Sat) – Day 13 – Generics<br>
-  Topics : Introduction to Generics, Type Parameters, Generic Classes, Generic Methods, Bounded Type Parameters, Wildcards
+  Topics : Introduction to Generics, Type Parameters, Generic Classes, Generic Methods, Bounded Type Parameters, Wildcards<br>
   🔗 [Code](https://github.com/abhisheksharma8395/BridgeLabz-Training/tree/generics-practice/generics-practice/gcr-codebase/generics)<br>
 
+* 📅 05/01/26 (Mon) – Day 14 – Collections<br>
+  Topics : Overview of Collections Framework , What is Collections Framework, Hierarchy of Collections Framework, List Interface and Implementing Classes, 
+  Set Interface and Implementing Classes, Queue and Deque Interfaces, Map Interface and Its Implementations, Comparison of Different Implementations, Real-World Use Cases and Best Practices.<br>
+  🔗 [Code](https://github.com/abhisheksharma8395/BridgeLabz-Training/tree/generics-practice/generics-practice/gcr-codebase/collections)<br>
+
+## 🧩 dsa-practice Branch
+
+### 📂 scenario-based folder :
+
+* 📅 06/01/26 (Tue) – Day 15 – Scenario Based Problem-1<br>
+  Problem Statement : ✈️ Flight Booking System<br>
+  📝 Story: Simulate a simple flight booking platform where users can search for flights, book them, and view their booking details. The system stores flight data and user bookings, allowing users 
+   to search flights case-insensitively and manage bookings efficiently.<br>
+  🔗 [Code](https://github.com/abhisheksharma8395/BridgeLabz-Training/blob/dsa-practice/dsa-practice/scenario-based/FlightBookingSystem.java)<br>
+
+
+* 📅 06/01/26 (Tue) – Day 15 – Scenario Based Problem-2<br>
+  Problem Statement : 🎓 Student Grading System<br>
+  📝 Story: Create a grading application that stores student information (name, ID) along with their grades for multiple subjects. The system analyzes student performance by calculating totals, 
+   averages, and subject-wise the highest grades. It also validates grade input and handles cases of incomplete or missing student records to ensure accurate results.<br>
+  🔗 [Code](https://github.com/abhisheksharma8395/BridgeLabz-Training/blob/dsa-practice/dsa-practice/scenario-based/StudentGradingSystem.java)<br>
+
+## 🚀 stream-practice Branch
+
+### 📂 gcr-codebase folder :
+
+* 📅 07/01/26 (Wed) to 08/01/26(Thu) – Day 15 & 16 – Java Streams <br>
+  Topics: Java I/O Streams, Types of Streams, File Streams, Object Streams, ByteArray Streams, Buffered Streams, Reader and Writer, Key Considerations, Best Practices<br>
+  🔗 [Code](https://github.com/abhisheksharma8395/BridgeLabz-Training/tree/stream-practice/stream-practice/gcr-codebase/java-streams)<br>
+
+* 📅 09/01/26 (Fri) – Day 17 – Exception Handling <br>
+  Topics: Types of Exceptions, Checked Exceptions, Unchecked Exceptions, Custom Exceptions, Handling Exceptions, try-catch blocks, try-catch-finally blocks, try-with-resources statement, throws clause, throw statement, Creating Custom Exceptions, Extending Exception Class, Defining Constructors<br>
+  🔗 [Code](https://github.com/abhisheksharma8395/BridgeLabz-Training/tree/stream-practice/stream-practice/gcr-codebase/exceptions)<br>
 
 📝 Note:
 Each topic’s code is organized in its dedicated branch — but this main README connects everything.
