@@ -1,6 +1,5 @@
 package reflection;
 
-import java.awt.image.ImageProducer;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
