@@ -11,6 +11,7 @@ import java.util.List;
 
 public class ImplementRoleBasedAccessControl {
     public static void main(String[] args) throws InvocationTargetException, NoSuchMethodException, IllegalAccessException {
+        // Creating the Objects of User class
         User user1 = new User("Abhishek",26);
         User user2 = new User("Virat",37);
         User user3 = new User("Mahendra Singh Dhoni",43);
@@ -18,6 +19,7 @@ public class ImplementRoleBasedAccessControl {
         User user5 = new User("Faf Du Plesis",41);
         User user6 = new User("Hardik Pandya",32);
 
+        // Adding User Object into list by using addUser method of User class
         User.addUser(user1);
         User.addUser(user2);
         User.addUser(user3);
@@ -25,15 +27,20 @@ public class ImplementRoleBasedAccessControl {
         User.addUser(user5);
         User.addUser(user6);
 
+        // Creating the object of Admin class
         Admin admin = new Admin("Abhishek Sharma",21);
 
+        // Passing Admin class Object in method ValidateAccess of class RoleAllowedOnlyAdmin
         RoleAllowedOnlyAdmin.ValidateAccess(admin,user5);
+        // Passing User class Object in method ValidateAccess of class RoleAllowedOnlyAdmin
         RoleAllowedOnlyAdmin.ValidateAccess(user1,user6);
     }
 
 }
 
+// RoleAllowedOnlyAdmin class
 class RoleAllowedOnlyAdmin{
+    // ValidateAccess method it will only run when you pass object of that class where your annotation value is "ADMIN"
     public static void ValidateAccess(Object obj , User user) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         Class<?> cls = obj.getClass();
         if(cls.isAnnotationPresent(RoleAllowed.class)){
@@ -50,6 +57,7 @@ class RoleAllowedOnlyAdmin{
     }
 }
 
+// Custom Annotation
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @interface RoleAllowed{
@@ -60,9 +68,9 @@ class RoleAllowedOnlyAdmin{
 // User Class
 @RoleAllowed(value = "USER")
 class User{
-    String userName;                      // Stores the username
-    int userAge;                       // Stores the userAge
-    static List<User> list = new ArrayList<>();                      // Stores the list of user
+    String userName;                                   // Stores the username
+    int userAge;                                       // Stores the userAge
+    static List<User> list = new ArrayList<>();        // Stores the list of user
 
     // Constructor of User class
     public User(String userName,int userAge){
@@ -84,7 +92,7 @@ class User{
 @RoleAllowed(value = "ADMIN")
 class Admin{
     String adminName;                      // Stores the Admin name
-    int adminAge;                       // Stores the Admin age
+    int adminAge;                          // Stores the Admin age
 
     // Constructor of Admin class
     public Admin(String adminName,int adminAge){
