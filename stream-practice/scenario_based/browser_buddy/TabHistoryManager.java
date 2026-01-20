@@ -37,7 +37,7 @@ public class TabHistoryManager {
 
     // This method is used to open the closed tabs
     public void openClosedTabs() {
-        if (this.closedTabs == null) {
+        if (this.closedTabs.isEmpty()) {
             System.out.println("No closed tab are present please try again");
             return;
         }
