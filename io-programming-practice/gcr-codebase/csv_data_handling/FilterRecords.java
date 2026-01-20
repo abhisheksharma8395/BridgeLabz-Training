@@ -6,7 +6,9 @@ import java.io.IOException;
 
 public class FilterRecords {
     public static void main(String[] args) {
+        // File path
         String filePath = "io-programming-practice/gcr-codebase/csv_data_handling/studentDetails.csv";
+        // Using try-with-resource to automatically close the resource
         try(BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath))){
             String line = bufferedReader.readLine();
             while((line = bufferedReader.readLine())!=null){
