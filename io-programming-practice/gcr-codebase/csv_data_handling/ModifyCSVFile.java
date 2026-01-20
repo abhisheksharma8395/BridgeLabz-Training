@@ -13,7 +13,8 @@ public class ModifyCSVFile {
             while((line = bufferedReader.readLine())!=null){
                 String[] column = line.split(",");
                 if(column[2].equals("IT")){
-                    bufferedWriter.write(line);
+                    int salary = Integer.parseInt(column[3]) + (Integer.parseInt(column[3]))/10;
+                    bufferedWriter.write(column[0]+","+column[1]+","+column[2]+","+String.valueOf(salary));
                     bufferedWriter.write("\n");
                 }
 
