@@ -1,5 +1,8 @@
 package csv_data_handling;
 
+import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvValidationException;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -11,11 +14,11 @@ public class SortCSVData {
     public static void main(String[] args) {
         String filePath = "io-programming-practice/gcr-codebase/csv_data_handling/employeeDetails.csv";
         List<Employee> ansList = new ArrayList<>();
-        try(BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath))){
+        try(CSVReader reader = new CSVReader(new FileReader(filePath))){
             // To skip the header
-            String line = bufferedReader.readLine();
-            while((line = bufferedReader.readLine())!=null){
-                String[] columns = line.split(",");
+            reader.readNext();
+            String[] columns;
+            while((columns = reader.readNext())!=null){
                 int employeeId = Integer.parseInt(columns[0]);
                 String employeeName = columns[1];
                 String department = columns[2];
@@ -28,6 +31,8 @@ public class SortCSVData {
             }
         }catch(IOException e){
             e.printStackTrace();
+        } catch (CsvValidationException e) {
+            throw new RuntimeException(e);
         }
     }
 
