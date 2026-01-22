@@ -1,10 +1,9 @@
-package JSONHandling;
+package json_handling;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 import java.io.FileReader;
-import java.io.FileWriter;
 
 public class MergeTwoJson {
     public static void main(String[] args) {
