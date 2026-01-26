@@ -1,5 +1,3 @@
-package address_book;
-
 public class Contact {
     String firstName;                                                             // Stores the First Name of contact
     String lastName;                                                              // Stores the Last Name of contact
