@@ -19,4 +19,16 @@ public class Contact {
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
+
+    // This method is used to display the Contact object details
+    public void display(){
+        System.out.println("First Name : "+this.firstName);
+        System.out.println("Last Name : "+this.lastName);
+        System.out.println("Address : "+this.address);
+        System.out.println("City : "+this.city);
+        System.out.println("State : "+this.state);
+        System.out.println("Zip code : "+this.zip);
+        System.out.println("Phone Number : "+this.phoneNumber);
+        System.out.println("Email : "+this.email);
+    }
 }
