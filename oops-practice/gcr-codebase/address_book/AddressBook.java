@@ -1,5 +1,8 @@
-import javax.print.attribute.standard.Chromaticity;
-import java.sql.SQLOutput;
+import com.google.gson.Gson;
+import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
+
+import java.io.*;
 import java.util.*;
 
 public class AddressBook {
@@ -250,5 +253,106 @@ public class AddressBook {
 
     public void sortByZip(){
         Collections.sort(addressBook,Comparator.comparing(p -> p.zip));
+    }
+
+    // UC-13
+    // This method is used to Reading the input from file Using file IO
+    public void readFile() throws IOException {
+        String filePath = "oops-practice/gcr-codebase/address_book/contactDetails.csv";
+        try(BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath))) {
+            // Reading Header
+            String line = bufferedReader.readLine();
+            while((line = bufferedReader.readLine())!=null){
+                String[] column = line.split(",");
+                String firstName = column[0];
+                String lastName = column[1];
+                String address = column[2];
+                String city = column[3];
+                String state = column[4];
+                String zip = column[5];
+                String phoneNumber = column[6];
+                String email = column[7];
+                Contact contact = new Contact(firstName,lastName,address,city,state,zip,phoneNumber,email);
+                this.addressBook.add(contact);
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
+    // This method is used to Writing the input to file using file IO
+    public void writeFile() throws IOException {
+        String filePath = "oops-practice/gcr-codebase/address_book/contactDetails.csv";
+        try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filePath))) {
+            // Reading Header
+            bufferedWriter.write("First Name, Last Name, Address, City, State, Zip, Phone Number, Email");
+            for(Contact contact : this.addressBook){
+                bufferedWriter.write(contact.firstName+","+contact.lastName+","+contact.address+","+contact.city+","+contact.state+","+contact.zip+","+contact.phoneNumber+","+contact.email);
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    // UC-14
+    // This method is used to Reading the input from file Using file CSVReader
+    public void readCSVFile() throws IOException {
+        String filePath = "oops-practice/gcr-codebase/address_book/contactDetails.csv";
+        try(CSVReader reader = new CSVReader(new FileReader(filePath))) {
+            // Reading Header
+            reader.readNext();
+            String[] column;
+            while((column = reader.readNext())!=null){
+                String firstName = column[0];
+                String lastName = column[1];
+                String address = column[2];
+                String city = column[3];
+                String state = column[4];
+                String zip = column[5];
+                String phoneNumber = column[6];
+                String email = column[7];
+                Contact contact = new Contact(firstName,lastName,address,city,state,zip,phoneNumber,email);
+                this.addressBook.add(contact);
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
+    // This method is used to Writing the input to file using CSVWriter
+    public void writeCSVFile() throws IOException {
+        String filePath = "oops-practice/gcr-codebase/address_book/contactDetails.csv";
+        try(CSVWriter bufferedWriter = new CSVWriter(new FileWriter(filePath))) {
+            String[] header = new String[]{"First Name", "Last Name", "Address", "City", "State", "Zip", "Phone Number", "Email"};
+            // Writing Header
+            bufferedWriter.writeNext(header);
+            for(Contact contact : this.addressBook){
+                String[] row = new String[]{contact.firstName,contact.lastName,contact.address,contact.city,contact.state,contact.zip,contact.phoneNumber,contact.email};
+                bufferedWriter.writeNext(row);
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    // UC-15
+    // This method is used to Reading the input from JSON file Using gson library
+    public void readJSONFile() throws IOException {
+        String filePath = "oops-practice/gcr-codebase/address_book/personDetails.json";
+        Gson gson = new Gson();
+        FileReader reader = new FileReader(filePath);
+        Contact[] contacts  = gson.fromJson(reader, Contact[].class);
+        if(contacts != null) this.addMultiplePerson(Arrays.asList(contacts));
+    }
+
+
+    // This method is used to Writing the input to JSON file using gson library
+    public void writeJSONFile() throws IOException {
+        String filePath = "oops-practice/gcr-codebase/address_book/personDetails.json";
+        FileWriter writer = new FileWriter(filePath);
+        Gson gson = new Gson();
+        gson.toJson(this.addressBook,writer);
     }
 }
