@@ -6,9 +6,16 @@ import java.io.*;
 import java.util.*;
 
 public class AddressBook {
-    List<Contact> addressBook = new ArrayList<>();
+    String nameOfAddressBook;
+    List<Contact> addressBook = new ArrayList<>();                        // Stores the list of contact
     HashMap<String, List<Contact>> cityAndPerson = new HashMap<>();      // Stores the list of person of a specific city
     HashMap<String, List<Contact>> stateAndPerson = new HashMap<>();      // Stores the list of person of a specific State
+
+    // Constructor of AddressBook class to initialize the instance variable
+    public AddressBook(String name){
+        this.nameOfAddressBook = nameOfAddressBook;
+    }
+
 
     // UC - 01
     // This method is used to add the contact
@@ -161,6 +168,7 @@ public class AddressBook {
     }
 
     // UC - 07
+    // This method is used to check the if this specific contact  already exists in your addressbook
     public boolean isValid(Contact contact) {
         if (addressBook.contains(contact)) {
             return false;
