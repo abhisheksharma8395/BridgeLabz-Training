@@ -1,4 +1,4 @@
-package functional_interface;
+package functional_Interface;
 
 public class SmartDeviceControl {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package functional_interface;
+package functional_Interface;
 
 import java.util.Scanner;
 import java.util.function.Function;

@@ -1,4 +1,4 @@
-package functional_interface;
+package functional_Interface;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

@@ -15,6 +15,7 @@ public class UserInterface {
             brickTransport.display();
         }
         else if(utility.findObjectType(goodsTransport).equals("TimberTransport")){
+            // Down casting
             TimberTransport timberTransport = (TimberTransport) goodsTransport;
             timberTransport.display();
         }

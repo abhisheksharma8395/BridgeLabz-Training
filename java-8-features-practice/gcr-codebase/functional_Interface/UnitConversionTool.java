@@ -1,4 +1,4 @@
-package functional_interface;
+package functional_Interface;
 
 public class UnitConversionTool {
     public static void main(String[] args) {
