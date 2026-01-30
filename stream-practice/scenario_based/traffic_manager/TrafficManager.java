@@ -1,4 +1,4 @@
-package scenario_based.traffic_manager;
+package traffic_manager;
 
 public class TrafficManager {
     private int maxVehicleRoundAbout;                                                          // Stores the maximum that can be in Round About

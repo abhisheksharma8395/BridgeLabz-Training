@@ -1,4 +1,4 @@
-package scenario_based.browser_buddy;
+package browser_buddy;
 
 // Tab class
 public class Tab {

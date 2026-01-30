@@ -1,4 +1,4 @@
-package scenario_based.library_organizer;
+package library_organizer;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package scenario_based.library_organizer;
+package library_organizer;
 
 // Main class to test the all classes
 public class Main {

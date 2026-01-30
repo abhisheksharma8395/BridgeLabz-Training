@@ -1,4 +1,4 @@
-package scenario_based.traffic_manager;
+package traffic_manager;
 
 
 // VehicleNode class

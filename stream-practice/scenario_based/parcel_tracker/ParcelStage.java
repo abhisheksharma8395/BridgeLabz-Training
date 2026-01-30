@@ -1,4 +1,4 @@
-package scenario_based.parcel_tracker;
+package parcel_tracker;
 
 class ParcelStage {
     String stageName;       // Name of the stage (e.g., Packed, Shipped, etc.)

@@ -1,4 +1,4 @@
-package scenario_based.library_organizer;
+package library_organizer;
 
 // Book class
 public class Book{

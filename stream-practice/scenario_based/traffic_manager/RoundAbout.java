@@ -1,4 +1,4 @@
-package scenario_based.traffic_manager;
+package traffic_manager;
 
 public class RoundAbout {
     VehicleNode head;                                   // Stores the first vehicle of Linked List

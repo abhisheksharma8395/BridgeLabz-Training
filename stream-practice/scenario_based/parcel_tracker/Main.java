@@ -1,4 +1,4 @@
-package scenario_based.parcel_tracker;
+package parcel_tracker;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package scenario_based.parcel_tracker;
+package parcel_tracker;
 
 class ParcelTracker {
     private ParcelStage head;  // Start of the delivery chain
