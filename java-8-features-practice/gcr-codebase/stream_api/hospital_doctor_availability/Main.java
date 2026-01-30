@@ -1,6 +1,4 @@
 package stream_api.hospital_doctor_availability;
-
-import javax.print.Doc;
 import java.util.Comparator;
 
 public class Main {
