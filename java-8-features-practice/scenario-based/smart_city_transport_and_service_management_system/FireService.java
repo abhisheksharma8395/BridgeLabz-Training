@@ -1,7 +1,7 @@
 package smart_city_transport_and_service_management_system;
 
-@EmergencyService
-public class FireService {
+
+public class FireService implements EmergencyService {
         String numberPlate;
         double totalWater;
 

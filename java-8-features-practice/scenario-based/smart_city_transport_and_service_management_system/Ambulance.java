@@ -1,7 +1,7 @@
 package smart_city_transport_and_service_management_system;
 
-@EmergencyService
-public class Ambulance {
+
+public class Ambulance implements EmergencyService {
     String ambulanceNumber;
     boolean isPatientInside;
 
