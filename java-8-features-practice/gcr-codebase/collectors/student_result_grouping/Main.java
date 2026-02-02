@@ -7,35 +7,40 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-
-
         List<Student> studentList = new ArrayList<>();
-        Student student12 = new Student("Jasprit Bumrah", "A");
-        Student student13 = new Student("Luka Modric", "B+");
-        Student student14 = new Student("Sunil Chhetri", "B");
-        Student student15 = new Student("Ravindra Jadeja", "C");
+        Student student1 = new Student("Virat Kohli", "A+");
+        Student student2 = new Student("Luka Modric", "B+");
+        Student student3 = new Student("Sunil Chhetri", "B");
+        Student student4 = new Student("Ravindra Jadeja", "C");
 
-        Student student16 = new Student("Erling Haaland", "A+");
-        Student student17 = new Student("Babar Azam", "A");
-        Student student18 = new Student("Robert Lewandowski", "B+");
-        Student student19 = new Student("Mohamed Salah", "B");
-        Student student20 = new Student("Ben Stokes", "C");
+        Student student5 = new Student("Erling Haaland", "A+");
+        Student student6 = new Student("Jasprit Bumrah", "A");
+        Student student7 = new Student("Robert Lewandowski", "B+");
+        Student student8 = new Student("Mohamed Salah", "B");
+        Student student9 = new Student("Ben Stokes", "C");
 
-        studentList.add(student12);
-        studentList.add(student13);
-        studentList.add(student14);
-        studentList.add(student15);
-        studentList.add(student16);
-        studentList.add(student17);
-        studentList.add(student18);
-        studentList.add(student19);
-        studentList.add(student20);
+        studentList.add(student1);
+        studentList.add(student2);
+        studentList.add(student3);
+        studentList.add(student4);
+        studentList.add(student5);
+        studentList.add(student6);
+        studentList.add(student7);
+        studentList.add(student8);
+        studentList.add(student9);
 
-        Map<String, List<String>> result = studentList.stream().collect(Collectors.groupingBy((Student student) -> student.grades, Collectors.mapping((Student student) -> student.grades, Collectors.toList())));
+        Map<String, List<String>> result = studentList.stream()
+                .collect(Collectors.groupingBy(
+                        (Student student) -> student.grades
+                        ,Collectors.mapping(
+                                (Student s) -> s.name, Collectors.toList()
+                        )
+                        )
+                );
         for (String key : result.keySet()) {
             System.out.print(key + " = ");
             for (String name : result.get(key)) {
-                System.out.print(name);
+                System.out.print(name+" , ");
             }
         }
     }
