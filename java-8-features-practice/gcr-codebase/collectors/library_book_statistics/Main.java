@@ -21,12 +21,12 @@ public class Main {
         books.add(new Book("Sapiens", "History", 498));
         books.add(new Book("Guns, Germs, and Steel", "History", 425));
 
-        Map<String, IntSummaryStatistics> map = books.stream().collect(Collectors.groupingBy(Book ::getGenre, Collectors.summarizingInt(Book ::getPages)));
-        map.forEach((genre,stats) ->{
-            System.out.println("Genre : "+genre);
-            System.out.println("Total Pages : "+stats.getSum());
-            System.out.println("Average Pages : "+stats.getAverage());
-            System.out.println("Maximum Pages : "+stats.getMax());
-        } );
+        Map<String, IntSummaryStatistics> map = books.stream().collect(Collectors.groupingBy(Book::getGenre, Collectors.summarizingInt(Book::getPages)));
+        map.forEach((genre, stats) -> {
+            System.out.println("Genre : " + genre);
+            System.out.println("Total Pages : " + stats.getSum());
+            System.out.println("Average Pages : " + stats.getAverage());
+            System.out.println("Maximum Pages : " + stats.getMax());
+        });
     }
 }
