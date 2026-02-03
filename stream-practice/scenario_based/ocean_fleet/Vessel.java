@@ -1,4 +1,4 @@
-package OceanFleet;
+package ocean_fleet;
 
 public class Vessel {
     private String vesselId;

@@ -1,4 +1,4 @@
-package OceanFleet;
+package ocean_fleet;
 
 import java.util.ArrayList;
 import java.util.List;
