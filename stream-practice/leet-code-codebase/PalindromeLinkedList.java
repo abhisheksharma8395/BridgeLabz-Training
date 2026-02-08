@@ -24,6 +24,7 @@ public class PalindromeLinkedList {
         Node temp = reverse(slow.next);
         slow.next = temp;
         Node start = head;
+        //**
         Node other = slow.next;
         while (other != null) {
             if (start.val != other.val) return false;
