@@ -1,6 +1,3 @@
-package junit.string_utils;
-
-
 public class StringUtils {
     // This method is used to reverse the string
     public String reverse(String str) {

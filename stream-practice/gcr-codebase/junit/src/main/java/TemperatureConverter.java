@@ -1,5 +1,3 @@
-package junit.testing_temperature_converter;
-
 public class TemperatureConverter {
     // This method is used to Convert the Temperature from celisus to Fahrenheit
     public double celsiusToFahrenheit(double celsius){

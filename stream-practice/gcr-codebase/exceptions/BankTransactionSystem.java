@@ -1,3 +1,5 @@
+package exceptions;
+
 public class BankTransactionSystem {
     public static void main(String[] args) {
         try {

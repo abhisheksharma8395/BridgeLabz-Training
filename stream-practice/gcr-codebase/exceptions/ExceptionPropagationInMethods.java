@@ -1,3 +1,5 @@
+package exceptions;
+
 public class ExceptionPropagationInMethods{
     public static void main(String[] args){
         try{

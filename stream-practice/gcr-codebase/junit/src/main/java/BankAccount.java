@@ -1,5 +1,3 @@
-package junit.testing_bankaccount_transaction;
-
 public class BankAccount {
     double amount;                            // Stores the amount present in account
 

@@ -1,6 +1,3 @@
-package junit.testing_list_operations;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class ListManager {

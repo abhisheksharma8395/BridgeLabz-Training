@@ -1,5 +1,3 @@
-package junit.string_utils;
-
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

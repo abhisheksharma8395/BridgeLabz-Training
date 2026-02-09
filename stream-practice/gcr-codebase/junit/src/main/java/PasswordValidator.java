@@ -1,5 +1,3 @@
-package junit.password_strength_validator;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

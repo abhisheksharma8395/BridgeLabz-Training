@@ -1,5 +1,3 @@
-package junit.date_formatter;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

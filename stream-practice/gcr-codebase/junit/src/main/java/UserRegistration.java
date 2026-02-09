@@ -1,5 +1,3 @@
-package junit.testing_user_registration;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

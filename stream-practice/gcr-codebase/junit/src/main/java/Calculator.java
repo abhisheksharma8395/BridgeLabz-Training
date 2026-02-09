@@ -1,5 +1,3 @@
-package junit.calculator;
-
 public class Calculator {
     // This method is used to return the sum of two numbers
     public int add(int a, int b) {
